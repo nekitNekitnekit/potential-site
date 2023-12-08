@@ -1,0 +1,163 @@
+<div class="backdrop is-hidden" data-first-modal>
+  <div class="modal buy__modal">
+    <button
+      type="button"
+      class="modal-close-btn"
+      aria-label="close modal window"
+      data-first-modal-close
+    >
+      <svg class="modal-close-icon">
+        <use href="./svg/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__window-title buy__modal-title">
+      Buy <span class="section__title-span">now</span>
+    </h2>
+    <form class="buy__form" autocomplete="off">
+      <div class="buy__form-chocolate-weight-container">
+        <label class="buy__form-chocolate-weight-wrapper">
+          <input
+            type="radio"
+            name="weight"
+            class="buy__form-radio"
+            checked
+          />
+          <span class="chocolate__weight-container">
+            <img
+              loading="lazy"
+              class="buy__form-img"
+              srcset="./img/buy-now-modal/buy-now-modal-img-1@2.webp 2x"
+              src="./img/buy-now-modal/buy-now-modal-img-1.webp"
+              alt="chocolate"
+              width="84"
+              height="69"
+            />
+            <span class="chocolate__weight">100 g</span>
+          </span>
+        </label>
+        <label class="buy__form-chocolate-weight-wrapper">
+          <input type="radio" name="weight" class="buy__form-radio" />
+          <span class="chocolate__weight-container">
+            <img
+              loading="lazy"
+              class="buy__form-img"
+              srcset="./img/buy-now-modal/buy-now-modal-img-2@2.webp 2x"
+              src="./img/buy-now-modal/buy-now-modal-img-2.webp"
+              alt="chocolate"
+              width="84"
+              height="69"
+            />
+            <span class="chocolate__weight">200 g</span>
+          </span>
+        </label>
+        <label class="buy__form-chocolate-weight-wrapper">
+          <input type="radio" name="weight" class="buy__form-radio" />
+          <span class="chocolate__weight-container">
+            <img
+              loading="lazy"
+              class="buy__form-img"
+              srcset="./img/buy-now-modal/buy-now-modal-img-3@2.webp 2x"
+              src="./img/buy-now-modal/buy-now-modal-img-3.webp"
+              alt="chocolate"
+              width="84"
+              height="69"
+            />
+            <span class="chocolate__weight">300 g</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="buy__form-field">
+        <label class="form-label" for="order-user-name">
+          Personal information
+        </label>
+        <div class="personal-info-input">
+          <input
+            class="form-input user-name"
+            id="order-user-name"
+            type="text"
+            name="order-user-name"
+            pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="form-input user-surname"
+            name="order-user-surname"
+            type="text"
+            pattern="[a-zA-zа-яА-ЯіІїЇєЄ']+"
+            placeholder="Surname"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="buy__form-field">
+        <label class="form-label" for="order-user-email"> Email </label>
+        <input
+          class="form-input user-email"
+          id="order-user-email"
+          name="order-user-email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="buy__form-field">
+        <label class="form-label" for="order-user-phone"> Phone number </label>
+          <span class="country-code">
+            <input
+              class="form-input user-phone-input"
+              type="tel"
+              name="order-user-phone"
+              maxlength="9"
+              minlength="9"
+              placeholder="Phone number"
+              required
+            />
+            <svg class="icon-flag">
+              <use class="flag" href="./svg/sprite.svg#icon-flag"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+
+      <div class="buy__form-field">
+        <label class="form-label" for="order-user-card">Card number</label>
+        <span class="user-card-wrapper">
+          <input
+            class="form-input user-card"
+            id="order-user-card"
+            name="order-user-card"
+            type="tel"
+            maxlength="16"
+            minlength="16"
+            placeholder="Enter card"
+            required
+          />
+          <svg class="icon-master-card">
+            <use href="./svg/sprite.svg#icon-mastercard"></use>
+          </svg>
+        </span>
+      </div>
+
+      <div class="buy__form-field">
+        <label class="form-label" for="order-user-comment">Comment</label>
+        <textarea
+          class="form-textarea"
+          id="order-user-comment"
+          name="order-user-comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="modal-button accent-button buy__form-submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
